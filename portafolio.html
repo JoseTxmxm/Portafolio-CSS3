@@ -26,13 +26,14 @@
     <a href="https://www.google.com/" target="_blank">Ir a la página</a>
 
     <h2>Enlaces internos</h2>
-    <a href="uno">Ir a la sección uno</a><br>
-    <a href="dos">Ir a la sección dos</a><br>
-    
+    <a href="#uno">Ir a la sección uno</a><br>
+    <a href="#dos">Ir a la sección dos</a><br>
+
     <hr>
 
     <figure>
-        <image src="./media/etiquetas.png" alt="Imagen de portafolio">
+        <image style="width: 700px; height: 700px;" src="./media/etiquetas.png" alt="Imagen de portafolio">
+            <figcaption>Esta es una imagen de prueba</figcaption><br><br>
     </figure>
 
     <video src="#" controls loop width="800px" height="700px" poster="#"></video>
@@ -49,12 +50,16 @@
     <input type="text" placeholder="Ingresa tu nombre"><br><br>
 
     <label for="mensaje">Mensaje:</label><br>
-    <textarea name="#" id="#"></textarea>
+    <textarea name="#" id="#"></textarea><br><br>
+    <details>
+        <summary>Información adicional</summary>
+        <p>Este es un texto de información adicional</p>
+    </details>
     <br><br><br><br><br>
 
     <hr>
 
-    <div id="#uno">
+    <div id="uno">
         <ul>
             <li>
                 <p>Esta es un párrafo en una lista desordenada</p>
@@ -75,15 +80,21 @@
 
     <hr>
 
-    <div id="#dos">
+    <div id="dos">
         <form action="https://www.google.com/search" method="get" style="text-align: center">
-            <input class="input" list="searches" name="q" placeholder="Elija algo en la lista" />
+            <input class="input" list="searches" name="q" placeholder="Elija algo en la lista">
+
             <datalist id="searches">
-                <option value="Alimentos para: "></option>
-                <option value="Accesorios para: "></option>
-                <option value="Más mascotas"></option>
+                <option value="HTML5">
+                <option value="JAVASCRIPT">
+                <option value="CSS3">
             </datalist>
 
+            <select name="#" id="searches">
+                <option value="">HTML5</option>
+                <option value="">JAVASCRIPT</option>
+                <option value="">CSS3</option>
+            </select>
 
             <a><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -99,7 +110,7 @@
     <hr>
 
 
-<script src="#"></script>
+    <script src="#"></script>
 </body>
 
 </html>
