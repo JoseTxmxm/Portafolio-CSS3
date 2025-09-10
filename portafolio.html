@@ -21,28 +21,40 @@
     <p>Este es un párrafo<br>
         de tres renglones<br>
         para pruebas de portafolio</p>
+
+    <h2>Enlace a Google</h2>
     <a href="https://www.google.com/" target="_blank">Ir a la página</a>
 
+    <h2>Enlaces internos</h2>
+    <a href="uno">Ir a la sección uno</a><br>
+    <a href="dos">Ir a la sección dos</a><br>
+    
     <hr>
 
     <figure>
-        <image src="#" alt="Imagen de portafolio">
+        <image src="./media/etiquetas.png" alt="Imagen de portafolio">
     </figure>
 
     <video src="#" controls loop width="800px" height="700px" poster="#"></video>
+    <figcaption>Este es un video de prueba</figcaption><br><br>
+
     <audio src="#" controls></audio>
+    <figcaption>Este es un audio de prueba</figcaption>
 
     <hr>
 
     <br><br><br><br><br>
 
-    <input type="text" placeholder="Ingresa tu nombre">
+    <label for="nombre">Nombre:</label>
+    <input type="text" placeholder="Ingresa tu nombre"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
     <textarea name="#" id="#"></textarea>
     <br><br><br><br><br>
 
     <hr>
 
-    <div>
+    <div id="#uno">
         <ul>
             <li>
                 <p>Esta es un párrafo en una lista desordenada</p>
@@ -53,16 +65,17 @@
             <li>Esta es una línea en una lista desordenada</li>
             <li>Esta es una línea en una lista desordenada</li>
         </ul>
-        <ol>
+        <ol style="list-style-type: lower-latin;">
             <li>Esta es una lista ordenada</li>
             <li>Esta es una lista ordenada</li>
             <li>Esta es una lista ordenada</li>
         </ol>
+        <br><br><br>
     </div>
 
     <hr>
 
-    <div>
+    <div id="#dos">
         <form action="https://www.google.com/search" method="get" style="text-align: center">
             <input class="input" list="searches" name="q" placeholder="Elija algo en la lista" />
             <datalist id="searches">
@@ -79,6 +92,7 @@
                 </button>
             </a>
         </form>
+        <br><br><br>
     </div>
 
     </div>
