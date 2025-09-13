@@ -18,18 +18,9 @@ h1 {
 
 }
 
-.h1 {
-
+.h1 {;
 }
 
-.h1_title {
-    color: gold;
-    padding: 20px;
-    text-align: left;
-    font-family: 'Bungee', cursive;
-    font-size: 30px;
-    font-weight: bold;
-}
 
 body {
     width: 100%;
@@ -47,13 +38,29 @@ body {
     background-size: cover;
     background-blend-mode: color-dodge;
     background-attachment: fixed;
+    position: relative;
+}
+
+.header .header_title {
+    color: gold;
+    text-align: left;
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 50px;
+    left: 80px;
+    border-bottom-left-radius: 30px;
 }
 
 .header .header_nav {
     margin: 0 auto;
     width: 100%;
-    text-align: center;
-
+    position: fixed;
+    text-align: right;
+    right: 0;
+    top: 70px;
+    border-bottom-left-radius: 30px;
 }
 
 .header_nav ul {
@@ -61,16 +68,22 @@ body {
 }
 
 .header_nav ul li {
-    color: gold;
     display: inline-block;
-    margin-right: 40px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 6%;
+   
 }
 
 .header_nav ul li a {
     text-decoration: none;
-    color: gold;
+    color: rgb(173, 197, 199);
+    font-size: 1.2rem;
+}
+
+.header_nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(107, 105, 238);
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .content_main {
@@ -97,4 +110,18 @@ body {
     padding: 20px;
     font-size: 2rem;
     font-family: 'Rowdies', cursive;
+    position: sticky;
+    top: 100px;
+}
+
+.lik_up {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: rgb(85, 2, 2);
+    background-color: gold;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 10px 15px;
 }
