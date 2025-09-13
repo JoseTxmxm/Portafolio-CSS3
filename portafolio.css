@@ -31,7 +31,7 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 700px;
-    background-color: rgb(85, 2, 2, 0.6);
+    background-color: rgba(48, 1, 1, 0.9);
     background-image: url('./media/development.png');
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -120,8 +120,76 @@ body {
     right: 30px;
     font-size: 2rem;
     color: rgb(85, 2, 2);
-    background-color: gold;
+    background-color: rgba(230, 213, 118, 0.6);
     border-radius: 50%;
     text-decoration: none;
     padding: 10px 15px;
+}
+
+.header .header_description {
+    position: relative;
+    top: 30%;
+    float: right;
+    margin-right: 50px;
+    border: 1px solid gold;
+    width: 25%;
+    height: 250px;
+    background-color: rgba(170, 5, 5, 0.2);
+    border-radius: 10%;
+}
+
+.header .header_description img {
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+    float: left;
+    shape-outside: circle();
+    margin-right: 40px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.header .header_description span {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-size: 1rem;
+    clear: both;
+}
+
+.header_name {
+    position: relative;
+    top: 35%;
+    margin-left: 40px;
+    width: auto;
+    float: left;
+    height: auto;
+    font-family: 'Rowdies', cursive;
+}
+
+.header_name h1 {
+    font-size: 3.5rem;
+    color:  wheat;
+}
+
+.header_name h1::first-letter {
+     background-color: rgba(48, 1, 1, 0.9);;
+     padding: 0 3px;
+     color: gold;
+}
+
+.header_name h3 {
+    font-size: 5em;
+    color: white;
+    margin-top: -20px;
+}
+
+.header_name h3::first-letter {
+    background-color: rgba(48, 1, 1, 0.9);
+    padding: 0 2px;
+    color: gold;
+    border-radius: 25px;
 }
