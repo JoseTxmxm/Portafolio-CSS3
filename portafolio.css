@@ -14,14 +14,6 @@ html {
     margin: 0;
 }
 
-h1 {
-
-}
-
-.h1 {;
-}
-
-
 body {
     width: 100%;
     height: 100%;
@@ -42,7 +34,7 @@ body {
 }
 
 .header .header_title {
-    color: gold;
+    color: rgba(172, 243, 5, 0.5);
     text-align: left;
     font-family: 'Bungee', cursive;
     font-size: 2rem;
@@ -51,6 +43,13 @@ body {
     top: 50px;
     left: 80px;
     border-bottom-left-radius: 30px;
+}
+
+.header .header_title::first-letter {
+     padding: 0 3px;
+     color: red;
+     border-radius: 25px;
+     background-color: rgba(48, 1, 1, 0.9);
 }
 
 .header .header_nav {
@@ -119,23 +118,29 @@ body {
     bottom: 20px;
     right: 30px;
     font-size: 2rem;
-    color: rgb(85, 2, 2);
-    background-color: rgba(230, 213, 118, 0.6);
+    font-weight: bolder;
+    color: blue;
     border-radius: 50%;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 5px;
+    background-color: rgba(172, 243, 5, 0.5);
+    box-shadow: gold 0px 0px 30px;
+    border: 1px solid gold;
 }
+
 
 .header .header_description {
     position: relative;
     top: 30%;
     float: right;
-    margin-right: 50px;
+    margin-right: 150px;
     border: 1px solid gold;
     width: 25%;
     height: 250px;
-    background-color: rgba(170, 5, 5, 0.2);
+    background-color: rgba(172, 243, 5, 0.5);;
     border-radius: 10%;
+    backdrop-filter: blur(6%);
+    box-shadow: gold 0px 0px 30px;
 }
 
 .header .header_description img {
@@ -164,7 +169,7 @@ body {
     position: relative;
     top: 35%;
     margin-left: 40px;
-    width: auto;
+    width: 40%;
     float: left;
     height: auto;
     font-family: 'Rowdies', cursive;
@@ -172,24 +177,47 @@ body {
 
 .header_name h1 {
     font-size: 3.5rem;
-    color:  wheat;
+    color:  white;
 }
 
 .header_name h1::first-letter {
-     background-color: rgba(48, 1, 1, 0.9);;
-     padding: 0 3px;
-     color: gold;
+     background-color: rgba(48, 1, 1, 0.9);
+     padding: 0 2px;
+     color: rgba(172, 243, 5, 0.5);
 }
 
 .header_name h3 {
-    font-size: 5em;
+    font-size: 4em;
     color: white;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .header_name h3::first-letter {
     background-color: rgba(48, 1, 1, 0.9);
     padding: 0 2px;
-    color: gold;
+    color: rgba(172, 243, 5, 0.5);
     border-radius: 25px;
+}
+
+.header .header_networks {
+    position: fixed;
+    top: 27%;
+    right: 0;
+    width:  50px;
+    height: auto;
+    border: 1px solid gold;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right:70px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(172, 243, 5, 0.5);
+    backdrop-filter: blur(6%);
+    box-shadow: gold 0px 0px 30px;
+}
+
+.header .header_networks a i {
+    color: blue;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 2rem;
 }
