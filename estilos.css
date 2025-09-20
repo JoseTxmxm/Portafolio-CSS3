@@ -57,12 +57,12 @@ body {
 }
 
 .header .header_nav {
-    position: absolute;
     margin: 0 auto;
     width: 100%;
     position: fixed;
     text-align: right;
-    right: 0;
+    float: right;
+    left: 70%;
     top: 15%;
 }
 
@@ -73,7 +73,7 @@ body {
 .header_nav ul li {
     display: inline-block;
     margin-right: 6%;
-   
+    width: 20%;
 }
 
 .header_nav ul li a {
@@ -115,6 +115,8 @@ body {
     font-family: 'Rowdies', cursive;
     position: sticky;
     top: 5%;
+    padding: 0;
+
 }
 
 .lik_up {
@@ -149,7 +151,7 @@ body {
     padding: 0.5em;
     position: static;
     clip-path: circle();
-    b
+
 }
 
 .header .header_description span {
@@ -162,11 +164,10 @@ body {
 }
 
 .header_name {
-    position: relative;
-    top: 35%;
+    position: absolute;
+    top: 50%;
     margin-left: 5%;
-    width: 40%;
-    float: left;
+    width: 40%<
     height: auto;
     font-family: 'Rowdies', cursive;
 }
@@ -185,7 +186,6 @@ body {
 .header_name h3 {
     font-size: 4em;
     color: white;
-    margin-top: -2%;
 }
 
 .header_name h3::first-letter {
@@ -213,13 +213,18 @@ body {
     font-size: 1.5rem;
 }
 
-@media (width <= 1000px) {
+@media screen and (width <= 900px) {
+    .content_main {
+        width: auto;
+    }
     body{
         background-color: red;  
     }
 
     .content_main .section h2 {
+        margin-top: 5%;
         color: white;
+        font-size: 5vw;
     }
 
     .header .header_description {
@@ -229,7 +234,33 @@ body {
     .header {
         background-image: url('./media/default_user.png');
     }
+    .header_name h1 {
+        font-size: 5vw;
+    }
+    .header_name h3 {
+        font-size: 6vw;
+    }
+    .header .header_title {
+        font-size: 4vw;
+    }
+    .lik_up{
+        font-size: 5vw;
+    }
+    .header .header_networks a i {
+        font-size: 3vw;
+        padding-right: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_nav ul li {
+    display: block;
+    padding: 0.2em; 
+    }
+    .header_nav ul li a {
+    font-size: 3vw;
+    }
 }
+
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -241,9 +272,29 @@ body {
     }
 }
 
+/*@media screen and (height <= 1000) {
+    .header .header_description {
+        display: none;
+    }
+
+    .header_name h1 {
+        font-size: 2vw;
+    }
+
+    .header_name h3 {
+        font-size: 3vw;
+    }
+}*/
+
 /*@media (orientation: landscape) {
     body {
-        background-color: lightblue;
+        background-color: black;
+    }
+}*/
+
+/*@media (orientation: portrait) {
+    body {
+        background-color: white;
     }
 }*/
 
