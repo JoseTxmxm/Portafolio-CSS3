@@ -63,7 +63,7 @@ body {
     text-align: right;
     float: right;
     left: 70%;
-    top: 15%;
+    top: 18%;
 }
 
 .header_nav ul {
@@ -71,7 +71,6 @@ body {
 }
 
 .header_nav ul li {
-    display: inline-block;
     margin-right: 6%;
     width: 20%;
 }
@@ -104,6 +103,8 @@ body {
 }
 
 .content_main .section:nth-child(even) h2 {
+    padding-top: 1em;
+    text-align: center;
     color: gold;
 }
 
@@ -115,7 +116,6 @@ body {
     font-family: 'Rowdies', cursive;
     position: sticky;
     top: 5%;
-    padding: 0;
 
 }
 
@@ -165,15 +165,14 @@ body {
 
 .header_name {
     position: absolute;
-    top: 50%;
+    top: 35%;
     margin-left: 5%;
-    width: 40%<
     height: auto;
     font-family: 'Rowdies', cursive;
 }
 
 .header_name h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color:  white;
 }
 
@@ -184,7 +183,7 @@ body {
 }
 
 .header_name h3 {
-    font-size: 4em;
+    font-size: 2rem;
     color: white;
 }
 
@@ -253,14 +252,50 @@ body {
         align-items: center;
     }
     .header_nav ul li {
-    display: block;
-    padding: 0.2em; 
+        display: block;
+        padding: 0.2em; 
     }
     .header_nav ul li a {
-    font-size: 3vw;
+        font-size: 3vw;
+    }
+    .header_nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(107, 105, 238);
+        font-size: 4vw;
+        cursor: pointer;
     }
 }
 
+@media screen and (width >= 900px) {
+    .header .header_nav {
+        text-align: right;
+        float: right;
+        left: 70%;
+        top: 15%;
+        width: auto;
+    }
+    .header_name h1 {
+        font-size: 5vw;
+    }
+    .header_name h3 {
+        font-size: 6vw;
+    }
+    .header_nav ul li {
+        position: absolute;
+        float: right;
+        left: 0;
+        padding: auto;
+    }
+    .header_nav ul li a {
+        font-size: 1em;
+    }
+    .header_nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(107, 105, 238);
+        font-size: 2vw;
+        cursor: pointer;
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     body {
